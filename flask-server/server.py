@@ -8,22 +8,8 @@ import sys, os
 app = Flask(__name__)
 api = Api(app)
 
-@app.route("/")
-def index():
-    return render_template('./frontend/public/index.html')
 
-
-@app.route("/country")
-def country():
-    # Create an instance of the getAllData resource
-    get_all_data_resource = getAllData()
-    # Call the get method to retrieve data
-    data = get_all_data_resource.get()
-    return jsonify(data)
-
-
-# Get Country Name and Index from MySQL DB
-class getAllData(Resource):
+class getCountryNames(Resource):
     def get(self):
         mydb = mysql.connector.connect(
             host="localhost",
@@ -54,7 +40,7 @@ class getAllData(Resource):
         return parsed_json_data
 
 
-api.add_resource(getAllData, '/getAllData')
+api.add_resource(getCountryNames, '/countrylist')
 
 if __name__ == '__main__':
     app.run(debug=True)

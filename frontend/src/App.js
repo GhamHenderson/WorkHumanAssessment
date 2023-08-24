@@ -5,7 +5,7 @@ function App() {
     const [data, setData] = useState([{}]);
 
     useEffect(() => {
-        fetch("/country").then(
+        fetch("/countrylist").then(
                 res => res.json()
             ).then(
                 data => {
