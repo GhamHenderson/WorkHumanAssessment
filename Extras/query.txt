@@ -1,3 +1,10 @@
+create table countries
+(
+    country_id   int auto_increment primary key,
+    country_name varchar(255) not null
+);
+
+
 INSERT INTO Countries (CountryName)
 VALUES
     ('Albania'),
@@ -31,3 +38,9 @@ VALUES
     ('United States of America'),
     ('Vietnam'),
     ('Zambia');
+
+
+
+
+
+

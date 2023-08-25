@@ -35,7 +35,7 @@ function App() {
     <div className="container mt-5">
         <img
           src={workHumanImage}
-          alt="WorkHuman Logo"
+          alt="Workhuman Logo"
           style={{ marginRight: "10px", width: "300px", height: "100px" }}
         />
 
