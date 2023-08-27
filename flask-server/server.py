@@ -1,9 +1,7 @@
-from flask import Flask, render_template, request, jsonify
-from flask_restful import Resource, Api
 import json
-import requests
 import mysql.connector
-import sys, os
+from flask import Flask
+from flask_restful import Resource, Api
 
 app = Flask(__name__)
 api = Api(app)

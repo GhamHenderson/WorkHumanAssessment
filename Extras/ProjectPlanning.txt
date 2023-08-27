@@ -1,0 +1,20 @@
+Backend -> Only used as an API to provide data from SQL database.
+Frontend -> Routing main Application function. (Country Filter)
+
+Backend ->  Flask,
+            Flask RESTful,
+            Docker (MySQL, Adminer),
+
+Frontend -> React,
+            NodeJS,
+            React Routing,
+            Bootstrap,
+            Bootstrap Icons
+
+Future Features ->
+            CRUD system for country list (Rather than brute force, Query Insert)
+            Create Fixtures to load sample data into database rather than manual insertion.
+            Learn React coding standards and design principles to better implement it into the application.
+            Implement forms of Software testing to ensure application features work as intended.
+            Implement Vite as it uses a faster and more efficient build system and provides a faster and more efficient development server
+

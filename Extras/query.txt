@@ -4,7 +4,6 @@ create table countries
     country_name varchar(255) not null
 );
 
-
 INSERT INTO Countries (CountryName)
 VALUES
     ('Albania'),
